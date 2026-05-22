@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Truck } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
+
 
 const links = [
   { label: "Home", href: "#home" },
@@ -32,9 +34,9 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2.5 group">
-          <span className="relative inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-brand shadow-glow">
-            <Truck className="w-5 h-5 text-white" />
+        <a href="#home" className="flex items-center gap-3 group">
+          <span className="relative inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/95 p-1.5 shadow-glow">
+            <img src={logo} alt="RWTWLLC logo" className="w-full h-full object-contain" />
           </span>
           <span className="text-lg font-bold tracking-tight text-foreground">
             RWTW<span className="text-accent">LLC</span>
