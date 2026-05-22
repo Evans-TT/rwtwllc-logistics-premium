@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { SectionHeader } from "./Section";
-import f1 from "@/assets/fleet-1.jpg";
+import trucks from "@/assets/fleet-trucks.png";
+import team from "@/assets/team.png";
+import office from "@/assets/office.png";
 import f2 from "@/assets/fleet-2.jpg";
 import f3 from "@/assets/fleet-3.jpg";
 import f4 from "@/assets/fleet-4.jpg";
 
 const items = [
-  { src: f1, label: "Premium Tractor Units", span: "lg:col-span-2 lg:row-span-2" },
+  { src: trucks, label: "Branded RWTWLLC Fleet", span: "lg:col-span-2 lg:row-span-2" },
+  { src: office, label: "Corporate Headquarters", span: "" },
+  { src: team, label: "Professional Team", span: "" },
   { src: f2, label: "Distribution Terminals", span: "" },
   { src: f3, label: "Long Haul Operations", span: "" },
   { src: f4, label: "Intermodal & Cargo", span: "lg:col-span-2" },

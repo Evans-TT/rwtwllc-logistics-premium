@@ -1,4 +1,5 @@
-import { Truck, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -6,9 +7,9 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <a href="#home" className="flex items-center gap-2.5">
-              <span className="w-10 h-10 rounded-lg bg-gradient-brand flex items-center justify-center shadow-glow">
-                <Truck className="w-5 h-5 text-white" />
+            <a href="#home" className="flex items-center gap-3">
+              <span className="w-11 h-11 rounded-xl bg-white/95 p-1.5 flex items-center justify-center shadow-glow">
+                <img src={logo} alt="RWTWLLC logo" className="w-full h-full object-contain" />
               </span>
               <span className="text-lg font-bold text-foreground">
                 RWTW<span className="text-accent">LLC</span>
